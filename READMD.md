@@ -5,6 +5,8 @@ Apps Script to notify received Gmail to Slack channel
 ## Requirements
 
 - clasp
+- Apps Script API enabled \
+  check https://script.google.com/home/usersettings
 
 ## Deploy
 
