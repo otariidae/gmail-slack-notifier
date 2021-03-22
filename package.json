@@ -1,7 +1,7 @@
 {
   "name": "gmail-slack-notifier",
   "version": "0.1.0",
-  "description": "Notify recieved Gmail to Slack",
+  "description": "Notify Gmail to Slack",
   "main": "main.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
