@@ -8,7 +8,9 @@ function myFunction(): void {
   const afterDate = new Date(invokeDate.getTime() - INVOKE_INTERVAL)
   const afterInSec = Math.floor(afterDate.getTime() / 1000)
   // ref: https://developers.google.com/gmail/api/guides/filtering
-  const threads = GmailApp.search(`in:inbox after:${afterInSec}`)
+  const threads = GmailApp.search(
+    `in:inbox category:primary after:${afterInSec}`
+  )
 
   for (const thread of threads) {
     const messages = thread.getMessages()
