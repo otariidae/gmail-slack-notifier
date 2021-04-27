@@ -9,7 +9,7 @@ function myFunction(): void {
   const afterInSec = Math.floor(afterDate.getTime() / 1000)
   // ref: https://developers.google.com/gmail/api/guides/filtering
   const threads = GmailApp.search(
-    `in:inbox category:primary after:${afterInSec}`
+    `in:inbox is:important category:primary after:${afterInSec}`
   )
 
   for (const thread of threads) {
