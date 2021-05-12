@@ -34,7 +34,7 @@ ${message.getPlainBody()}
         content: content,
         title: message.getSubject(),
         filename: message.getHeader("Message-ID"),
-        filetype: "email",
+        filetype: "text",
         initial_comment: thread.getPermalink(),
       }
       const httpsResponse = UrlFetchApp.fetch(
