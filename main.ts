@@ -22,6 +22,7 @@ function myFunction(): void {
 
       const content = `
 Subject: ${message.getSubject()}
+Date: ${Utilities.formatDate(message.getDate(), "JST", "yyyy/MM/dd (E) HH:mm:ss Z")}
 From: ${message.getFrom()}
 To: ${message.getTo()}
 
